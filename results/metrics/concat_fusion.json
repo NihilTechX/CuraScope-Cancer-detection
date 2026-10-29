@@ -1,0 +1,7 @@
+{
+    "model": "M3_Multimodal_Concat",
+    "cohort_size": 100,
+    "test_c_index": 0.6521739130434783,
+    "best_val_c_index": 1.0,
+    "best_epoch": 3
+}

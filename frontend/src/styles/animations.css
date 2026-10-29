@@ -1,0 +1,141 @@
+/**
+ * CuraScope Animation Utilities
+ * Keyframes and transition helpers
+ */
+
+/* ============================================
+   KEYFRAMES
+   ============================================ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-16px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.animate-fade-in {
+  animation: fadeIn var(--duration-default) var(--ease-out);
+}
+
+.animate-slide-up {
+  animation: slideUp var(--duration-default) var(--ease-out);
+}
+
+.animate-slide-down {
+  animation: slideDown var(--duration-default) var(--ease-out);
+}
+
+.animate-scale-in {
+  animation: scaleIn var(--duration-default) var(--ease-out);
+}
+
+/* Skeleton loading shimmer */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--slate-100) 0%,
+    var(--slate-200) 50%,
+    var(--slate-100) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+/* ============================================
+   TRANSITION UTILITIES
+   ============================================ */
+
+.transition-quick {
+  transition-duration: var(--duration-quick);
+  transition-timing-function: var(--ease-out);
+}
+
+.transition-default {
+  transition-duration: var(--duration-default);
+  transition-timing-function: var(--ease-out);
+}
+
+.transition-gentle {
+  transition-duration: var(--duration-gentle);
+  transition-timing-function: var(--ease-out);
+}
+
+/* ============================================
+   INTERACTION STATES
+   ============================================ */
+
+/* Subtle hover lift */
+.hover-lift {
+  transition: transform var(--duration-quick) var(--ease-out);
+}
+
+.hover-lift:hover {
+  transform: translateY(-1px);
+}
+
+/* Press feedback */
+.press-feedback {
+  transition: transform var(--duration-quick) var(--ease-out);
+}
+
+.press-feedback:active {
+  transform: scale(0.98);
+}

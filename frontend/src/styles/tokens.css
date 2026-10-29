@@ -1,0 +1,187 @@
+/**
+ * CuraScope Design System Tokens
+ * Medical precision meets fluid interaction
+ */
+
+:root {
+  /* ============================================
+     COLOR PALETTE
+     ============================================ */
+  
+  /* Primary: Deep clinical blue - trust, precision, medical authority */
+  --clinical-blue-900: #0A2540;
+  --clinical-blue-700: #1E4976;
+  --clinical-blue-500: #2E6BA8;
+  --clinical-blue-100: #E3F2FD;
+
+  /* Diagnostic: Teal - analysis, insight, AI */
+  --diagnostic-teal-700: #006B7D;
+  --diagnostic-teal-500: #00ACC1;
+  --diagnostic-teal-100: #E0F7FA;
+
+  /* Risk indicators (semantic) */
+  --risk-low: #2E7D32;
+  --risk-medium: #F57C00;
+  --risk-high: #C62828;
+
+  /* Neutrals: Cool grays with slight blue tint */
+  --slate-950: #0F172A;
+  --slate-800: #1E293B;
+  --slate-600: #475569;
+  --slate-400: #94A3B8;
+  --slate-200: #E2E8F0;
+  --slate-100: #F1F5F9;
+  --slate-50: #F8FAFC;
+
+  /* Surface: Subtle warmth for comfort */
+  --surface-base: #FAFBFC;
+  --surface-elevated: #FFFFFF;
+
+  /* ============================================
+     TYPOGRAPHY
+     ============================================ */
+  
+  /* System font stack - optimized for medical data */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", sans-serif;
+  --font-mono: "SF Mono", "Consolas", "Monaco", monospace;
+
+  /* Type scale with optical sizing */
+  --text-xs: 0.6875rem;    /* 11px - labels, captions */
+  --text-sm: 0.8125rem;    /* 13px - body, forms */
+  --text-base: 0.9375rem;  /* 15px - primary content */
+  --text-lg: 1.125rem;     /* 18px - section headers */
+  --text-xl: 1.5rem;       /* 24px - page titles */
+  --text-2xl: 2rem;        /* 32px - hero numbers */
+
+  /* Weights */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* ============================================
+     SPACING & LAYOUT
+     ============================================ */
+  
+  /* 8px base grid */
+  --space-1: 0.5rem;   /* 8px */
+  --space-2: 1rem;     /* 16px */
+  --space-3: 1.5rem;   /* 24px */
+  --space-4: 2rem;     /* 32px */
+  --space-6: 3rem;     /* 48px */
+  --space-8: 4rem;     /* 64px */
+
+  /* Radius - minimal, purposeful */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  /* Shadows - subtle depth, not decoration */
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 2px 8px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 8px 24px rgba(15, 23, 42, 0.08);
+
+  /* ============================================
+     TRANSITIONS
+     ============================================ */
+  
+  /* Duration */
+  --duration-quick: 0.15s;
+  --duration-default: 0.25s;
+  --duration-gentle: 0.35s;
+
+  /* Easing */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+/* ============================================
+   TYPOGRAPHY UTILITIES
+   ============================================ */
+
+/* Size-specific tracking (letter-spacing) */
+.text-xs {
+  font-size: var(--text-xs);
+  letter-spacing: 0.01em;
+  line-height: 1.5;
+}
+
+.text-sm {
+  font-size: var(--text-sm);
+  letter-spacing: 0.005em;
+  line-height: 1.5;
+}
+
+.text-base {
+  font-size: var(--text-base);
+  letter-spacing: 0;
+  line-height: 1.6;
+}
+
+.text-lg {
+  font-size: var(--text-lg);
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+}
+
+.text-xl {
+  font-size: var(--text-xl);
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+}
+
+.text-2xl {
+  font-size: var(--text-2xl);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* Tabular numerals for metrics */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================
+   FOCUS INDICATORS
+   ============================================ */
+
+/* High-contrast focus ring for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--clinical-blue-500);
+  outline-offset: 2px;
+}
+
+/* Remove default focus styles */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ============================================
+   BACKDROP BLUR SUPPORT
+   ============================================ */
+
+.backdrop-blur-support {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+@supports not (backdrop-filter: blur(20px)) {
+  .backdrop-blur-support {
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+}

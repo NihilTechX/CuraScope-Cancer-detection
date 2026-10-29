@@ -1,0 +1,231 @@
+{
+    "fold_statistics": [
+        {
+            "fold": 1,
+            "train_n": 202,
+            "train_events": 25,
+            "train_censored": 177,
+            "val_n": 36,
+            "val_events": 5,
+            "val_censored": 31,
+            "test_n": 60,
+            "test_events": 7,
+            "test_censored": 53,
+            "test_comparable_pairs": 222
+        },
+        {
+            "fold": 2,
+            "train_n": 202,
+            "train_events": 25,
+            "train_censored": 177,
+            "val_n": 36,
+            "val_events": 4,
+            "val_censored": 32,
+            "test_n": 60,
+            "test_events": 8,
+            "test_censored": 52,
+            "test_comparable_pairs": 191
+        },
+        {
+            "fold": 3,
+            "train_n": 202,
+            "train_events": 25,
+            "train_censored": 177,
+            "val_n": 36,
+            "val_events": 4,
+            "val_censored": 32,
+            "test_n": 60,
+            "test_events": 8,
+            "test_censored": 52,
+            "test_comparable_pairs": 205
+        },
+        {
+            "fold": 4,
+            "train_n": 203,
+            "train_events": 25,
+            "train_censored": 178,
+            "val_n": 36,
+            "val_events": 5,
+            "val_censored": 31,
+            "test_n": 59,
+            "test_events": 7,
+            "test_censored": 52,
+            "test_comparable_pairs": 156
+        },
+        {
+            "fold": 5,
+            "train_n": 203,
+            "train_events": 25,
+            "train_censored": 178,
+            "val_n": 36,
+            "val_events": 5,
+            "val_censored": 31,
+            "test_n": 59,
+            "test_events": 7,
+            "test_censored": 52,
+            "test_comparable_pairs": 193
+        }
+    ],
+    "configurations": {
+        "M4_c1_baseline": {
+            "hyperparameters": {
+                "name": "M4_c1_baseline",
+                "lr": 0.0005,
+                "dropout": 0.4,
+                "wd": 0.0001
+            },
+            "per_fold_cindex": [
+                0.7387387387387387,
+                0.5863874345549738,
+                0.697560975609756,
+                0.5833333333333334,
+                0.6855670103092784
+            ],
+            "mean_cindex": 0.6583174985092161,
+            "std_cindex": 0.06252474933323984,
+            "median_cindex": 0.6855670103092784,
+            "pooled_oof_cindex": 0.6477503040129712,
+            "total_oof_pairs": 4929
+        },
+        "M4_c2": {
+            "hyperparameters": {
+                "name": "M4_c2",
+                "lr": 0.001,
+                "dropout": 0.4,
+                "wd": 0.0001
+            },
+            "per_fold_cindex": [
+                0.6666666666666666,
+                0.6178010471204188,
+                0.7609756097560976,
+                0.5769230769230769,
+                0.6443298969072165
+            ],
+            "mean_cindex": 0.6533392594746952,
+            "std_cindex": 0.06155772866396801,
+            "median_cindex": 0.6443298969072165,
+            "pooled_oof_cindex": 0.6497770571544386,
+            "total_oof_pairs": 4929
+        },
+        "M4_c3": {
+            "hyperparameters": {
+                "name": "M4_c3",
+                "lr": 0.0001,
+                "dropout": 0.4,
+                "wd": 0.0001
+            },
+            "per_fold_cindex": [
+                0.5540540540540541,
+                0.5654450261780105,
+                0.7317073170731707,
+                0.6666666666666666,
+                0.5979381443298969
+            ],
+            "mean_cindex": 0.6231622416603597,
+            "std_cindex": 0.06695990148574464,
+            "median_cindex": 0.5979381443298969,
+            "pooled_oof_cindex": 0.5972841507904337,
+            "total_oof_pairs": 4929
+        },
+        "M4_c4": {
+            "hyperparameters": {
+                "name": "M4_c4",
+                "lr": 0.0005,
+                "dropout": 0.3,
+                "wd": 0.0001
+            },
+            "per_fold_cindex": [
+                0.6036036036036037,
+                0.581151832460733,
+                0.7365853658536585,
+                0.5576923076923077,
+                0.6237113402061856
+            ],
+            "mean_cindex": 0.6205488899632977,
+            "std_cindex": 0.06207203175836149,
+            "median_cindex": 0.6036036036036037,
+            "pooled_oof_cindex": 0.6072152411836238,
+            "total_oof_pairs": 4929
+        },
+        "M4_c5": {
+            "hyperparameters": {
+                "name": "M4_c5",
+                "lr": 0.0005,
+                "dropout": 0.5,
+                "wd": 0.0001
+            },
+            "per_fold_cindex": [
+                0.7522522522522522,
+                0.6230366492146597,
+                0.7219512195121951,
+                0.6730769230769231,
+                0.6443298969072165
+            ],
+            "mean_cindex": 0.6829293881926494,
+            "std_cindex": 0.04796351692608385,
+            "median_cindex": 0.6730769230769231,
+            "pooled_oof_cindex": 0.6765301986218079,
+            "total_oof_pairs": 4929
+        },
+        "M4_c6": {
+            "hyperparameters": {
+                "name": "M4_c6",
+                "lr": 0.0005,
+                "dropout": 0.4,
+                "wd": 0.001
+            },
+            "per_fold_cindex": [
+                0.7207207207207207,
+                0.5916230366492147,
+                0.6829268292682927,
+                0.5576923076923077,
+                0.6855670103092784
+            ],
+            "mean_cindex": 0.6477059809279628,
+            "std_cindex": 0.06205300305219395,
+            "median_cindex": 0.6829268292682927,
+            "pooled_oof_cindex": 0.6289014997973247,
+            "total_oof_pairs": 4929
+        },
+        "M4_c7": {
+            "hyperparameters": {
+                "name": "M4_c7",
+                "lr": 0.001,
+                "dropout": 0.5,
+                "wd": 0.001
+            },
+            "per_fold_cindex": [
+                0.7477477477477478,
+                0.6178010471204188,
+                0.7268292682926829,
+                0.6602564102564102,
+                0.5876288659793815
+            ],
+            "mean_cindex": 0.6680526678793283,
+            "std_cindex": 0.061416592945631523,
+            "median_cindex": 0.6602564102564102,
+            "pooled_oof_cindex": 0.6588974462910417,
+            "total_oof_pairs": 4929
+        },
+        "M4_c8": {
+            "hyperparameters": {
+                "name": "M4_c8",
+                "lr": 0.0001,
+                "dropout": 0.5,
+                "wd": 0.001
+            },
+            "per_fold_cindex": [
+                0.6576576576576577,
+                0.5706806282722513,
+                0.6878048780487804,
+                0.6794871794871795,
+                0.5309278350515464
+            ],
+            "mean_cindex": 0.625311635703483,
+            "std_cindex": 0.06289595983495769,
+            "median_cindex": 0.6576576576576577,
+            "pooled_oof_cindex": 0.5987028779894609,
+            "total_oof_pairs": 4929
+        }
+    }
+}

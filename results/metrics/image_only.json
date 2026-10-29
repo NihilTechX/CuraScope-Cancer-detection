@@ -1,0 +1,7 @@
+{
+    "model": "M2_Image_Only",
+    "cohort_size": 100,
+    "test_c_index": 0.5652173913043478,
+    "best_val_c_index": 1.0,
+    "best_epoch": 2
+}

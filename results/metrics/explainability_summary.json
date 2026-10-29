@@ -1,0 +1,142 @@
+{
+    "shap_clinical": {
+        "feature_names": [
+            "Age",
+            "Year of Diagnosis",
+            "AJCC Stage",
+            "Pathologic T",
+            "Pathologic N",
+            "Pathologic M",
+            "Gender",
+            "Race_asian",
+            "Race_black or african american",
+            "Race_not reported",
+            "Race_white",
+            "Primary Diagnosis_Infiltrating duct and lobular carcinoma",
+            "Primary Diagnosis_Infiltrating duct carcinoma, NOS",
+            "Primary Diagnosis_Infiltrating duct mixed with other types of carcinoma",
+            "Primary Diagnosis_Intraductal papillary adenocarcinoma with invasion",
+            "Primary Diagnosis_Lobular carcinoma, NOS",
+            "Primary Diagnosis_Medullary carcinoma, NOS",
+            "Primary Diagnosis_Metaplastic carcinoma, NOS",
+            "Primary Diagnosis_Mucinous adenocarcinoma"
+        ],
+        "feature_ranking": [
+            {
+                "feature": "AJCC Stage",
+                "mean_abs_shap": 0.3750213298984795
+            },
+            {
+                "feature": "Age",
+                "mean_abs_shap": 0.24512012359784646
+            },
+            {
+                "feature": "Pathologic N",
+                "mean_abs_shap": 0.21040722102849518
+            },
+            {
+                "feature": "Year of Diagnosis",
+                "mean_abs_shap": 0.12008026417334335
+            },
+            {
+                "feature": "Pathologic T",
+                "mean_abs_shap": 0.07786534043529839
+            },
+            {
+                "feature": "Pathologic M",
+                "mean_abs_shap": 0.05191371384676394
+            },
+            {
+                "feature": "Race_not reported",
+                "mean_abs_shap": 0.032084099021214965
+            },
+            {
+                "feature": "Primary Diagnosis_Lobular carcinoma, NOS",
+                "mean_abs_shap": 0.022851677093032718
+            },
+            {
+                "feature": "Race_white",
+                "mean_abs_shap": 0.021966615278475998
+            },
+            {
+                "feature": "Race_black or african american",
+                "mean_abs_shap": 0.019175333069023175
+            },
+            {
+                "feature": "Primary Diagnosis_Infiltrating duct carcinoma, NOS",
+                "mean_abs_shap": 0.015587095128236908
+            },
+            {
+                "feature": "Primary Diagnosis_Mucinous adenocarcinoma",
+                "mean_abs_shap": 0.01424962024169416
+            },
+            {
+                "feature": "Race_asian",
+                "mean_abs_shap": 0.010147595532624598
+            },
+            {
+                "feature": "Primary Diagnosis_Medullary carcinoma, NOS",
+                "mean_abs_shap": 0.007627806301106442
+            },
+            {
+                "feature": "Primary Diagnosis_Infiltrating duct and lobular carcinoma",
+                "mean_abs_shap": 0.0073371085800421005
+            },
+            {
+                "feature": "Primary Diagnosis_Metaplastic carcinoma, NOS",
+                "mean_abs_shap": 0.005311879357846948
+            },
+            {
+                "feature": "Gender",
+                "mean_abs_shap": 0.003548167726321295
+            },
+            {
+                "feature": "Primary Diagnosis_Intraductal papillary adenocarcinoma with invasion",
+                "mean_abs_shap": 0.0
+            },
+            {
+                "feature": "Primary Diagnosis_Infiltrating duct mixed with other types of carcinoma",
+                "mean_abs_shap": 0.0
+            }
+        ],
+        "mean_abs_shap": {
+            "AJCC Stage": 0.3750213298984795,
+            "Age": 0.24512012359784646,
+            "Pathologic N": 0.21040722102849518,
+            "Year of Diagnosis": 0.12008026417334335,
+            "Pathologic T": 0.07786534043529839,
+            "Pathologic M": 0.05191371384676394,
+            "Race_not reported": 0.032084099021214965,
+            "Primary Diagnosis_Lobular carcinoma, NOS": 0.022851677093032718,
+            "Race_white": 0.021966615278475998,
+            "Race_black or african american": 0.019175333069023175,
+            "Primary Diagnosis_Infiltrating duct carcinoma, NOS": 0.015587095128236908,
+            "Primary Diagnosis_Mucinous adenocarcinoma": 0.01424962024169416,
+            "Race_asian": 0.010147595532624598,
+            "Primary Diagnosis_Medullary carcinoma, NOS": 0.007627806301106442,
+            "Primary Diagnosis_Infiltrating duct and lobular carcinoma": 0.0073371085800421005,
+            "Primary Diagnosis_Metaplastic carcinoma, NOS": 0.005311879357846948,
+            "Gender": 0.003548167726321295,
+            "Primary Diagnosis_Intraductal papillary adenocarcinoma with invasion": 0.0,
+            "Primary Diagnosis_Infiltrating duct mixed with other types of carcinoma": 0.0
+        }
+    },
+    "m4_patch_attention": {
+        "n_patients": 298,
+        "mean_valid_patches": 119.38255033557047,
+        "mean_normalized_entropy": 0.7655588153782898,
+        "high_risk_mean_normalized_entropy": 0.7731556314529816,
+        "low_risk_mean_normalized_entropy": 0.7579619993035981,
+        "high_risk_mean_max_attention": 0.14450628607965155,
+        "low_risk_mean_max_attention": 0.16452656363780865,
+        "overall_mean_max_attention": 0.1545164248587301
+    },
+    "gradcam": {
+        "status": "verified",
+        "cam_shape": [
+            224,
+            224
+        ],
+        "target_layer": "ResNet50.layer4[-1]"
+    }
+}

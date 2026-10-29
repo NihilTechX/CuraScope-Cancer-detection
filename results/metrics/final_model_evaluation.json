@@ -1,0 +1,150 @@
+{
+    "cohort_size": 297,
+    "event_count": 37,
+    "event_rate": 0.12457912457912458,
+    "total_oof_comparable_pairs": 4901,
+    "fold_statistics": [
+        {
+            "fold": 1,
+            "train_n": 201,
+            "train_events": 25,
+            "val_n": 36,
+            "val_events": 4,
+            "test_n": 60,
+            "test_events": 8,
+            "test_comparable_pairs": 257
+        },
+        {
+            "fold": 2,
+            "train_n": 201,
+            "train_events": 25,
+            "val_n": 36,
+            "val_events": 4,
+            "test_n": 60,
+            "test_events": 8,
+            "test_comparable_pairs": 210
+        },
+        {
+            "fold": 3,
+            "train_n": 202,
+            "train_events": 25,
+            "val_n": 36,
+            "val_events": 5,
+            "test_n": 59,
+            "test_events": 7,
+            "test_comparable_pairs": 149
+        },
+        {
+            "fold": 4,
+            "train_n": 202,
+            "train_events": 25,
+            "val_n": 36,
+            "val_events": 5,
+            "test_n": 59,
+            "test_events": 7,
+            "test_comparable_pairs": 162
+        },
+        {
+            "fold": 5,
+            "train_n": 202,
+            "train_events": 25,
+            "val_n": 36,
+            "val_events": 5,
+            "test_n": 59,
+            "test_events": 7,
+            "test_comparable_pairs": 197
+        }
+    ],
+    "models": {
+        "M1_Clinical": {
+            "per_fold_cindex": [
+                0.5291828793774319,
+                0.3238095238095238,
+                0.785234899328859,
+                0.5153374233128835,
+                0.7070707070707071
+            ],
+            "mean_cindex": 0.5721270865798811,
+            "std_cindex": 0.16146554018257994,
+            "median_cindex": 0.5291828793774319,
+            "pooled_oof_cindex": 0.5507541785568691
+        },
+        "M2_Image": {
+            "per_fold_cindex": [
+                0.6459143968871596,
+                0.6047619047619047,
+                0.7181208053691275,
+                0.656441717791411,
+                0.3686868686868687
+            ],
+            "mean_cindex": 0.5987851386992943,
+            "std_cindex": 0.12063779260642646,
+            "median_cindex": 0.6459143968871596,
+            "pooled_oof_cindex": 0.5601304525071341
+        },
+        "M3_Concat": {
+            "per_fold_cindex": [
+                0.6964980544747081,
+                0.4523809523809524,
+                0.6510067114093959,
+                0.4539877300613497,
+                0.5757575757575758
+            ],
+            "mean_cindex": 0.5659262048167963,
+            "std_cindex": 0.09980691645473494,
+            "median_cindex": 0.5757575757575758,
+            "pooled_oof_cindex": 0.5485120260905014
+        },
+        "M4_Attention": {
+            "per_fold_cindex": [
+                0.7042801556420234,
+                0.8,
+                0.6778523489932886,
+                0.44171779141104295,
+                0.7373737373737373
+            ],
+            "mean_cindex": 0.6722448066840185,
+            "std_cindex": 0.122281298583445,
+            "median_cindex": 0.7042801556420234,
+            "pooled_oof_cindex": 0.6459437423562984
+        }
+    },
+    "log_rank_tests": {
+        "M1_Clinical": {
+            "model": "M1_Clinical",
+            "p_value": 0.9537645965779139,
+            "test_statistic": 0.003361674989215094,
+            "high_risk_n": 148,
+            "high_risk_events": 22,
+            "low_risk_n": 149,
+            "low_risk_events": 15
+        },
+        "M2_Image": {
+            "model": "M2_Image",
+            "p_value": 0.3201675508542294,
+            "test_statistic": 0.9882619073763205,
+            "high_risk_n": 148,
+            "high_risk_events": 21,
+            "low_risk_n": 149,
+            "low_risk_events": 16
+        },
+        "M3_Concat": {
+            "model": "M3_Concat",
+            "p_value": 0.7912895162442769,
+            "test_statistic": 0.07003246551427172,
+            "high_risk_n": 148,
+            "high_risk_events": 19,
+            "low_risk_n": 149,
+            "low_risk_events": 18
+        },
+        "M4_Attention": {
+            "model": "M4_Attention",
+            "p_value": 0.10942295050055677,
+            "test_statistic": 2.5625356860521724,
+            "high_risk_n": 148,
+            "high_risk_events": 25,
+            "low_risk_n": 149,
+            "low_risk_events": 12
+        }
+    }
+}

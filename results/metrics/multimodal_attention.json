@@ -1,0 +1,7 @@
+{
+    "model": "M4_Multimodal_Attention",
+    "cohort_size": 100,
+    "test_c_index": 0.7391304347826086,
+    "best_val_c_index": 1.0,
+    "best_epoch": 11
+}

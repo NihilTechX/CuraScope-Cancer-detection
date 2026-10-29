@@ -1,0 +1,104 @@
+{
+    "fold_statistics": [
+        {
+            "fold": 1,
+            "train_n": 39,
+            "train_events": 6,
+            "val_n": 9,
+            "val_events": 1,
+            "test_n": 12,
+            "test_events": 1,
+            "test_comparable_pairs": 3
+        },
+        {
+            "fold": 2,
+            "train_n": 39,
+            "train_events": 6,
+            "val_n": 9,
+            "val_events": 1,
+            "test_n": 12,
+            "test_events": 1,
+            "test_comparable_pairs": 3
+        },
+        {
+            "fold": 3,
+            "train_n": 39,
+            "train_events": 5,
+            "val_n": 9,
+            "val_events": 1,
+            "test_n": 12,
+            "test_events": 2,
+            "test_comparable_pairs": 8
+        },
+        {
+            "fold": 4,
+            "train_n": 39,
+            "train_events": 5,
+            "val_n": 9,
+            "val_events": 1,
+            "test_n": 12,
+            "test_events": 2,
+            "test_comparable_pairs": 6
+        },
+        {
+            "fold": 5,
+            "train_n": 39,
+            "train_events": 5,
+            "val_n": 9,
+            "val_events": 1,
+            "test_n": 12,
+            "test_events": 2,
+            "test_comparable_pairs": 7
+        }
+    ],
+    "models": {
+        "M1_Clinical": {
+            "per_fold_cindex": [
+                0.0,
+                0.3333333333333333,
+                0.0,
+                0.8333333333333334,
+                0.14285714285714285
+            ],
+            "mean_cindex": 0.2619047619047619,
+            "std_cindex": 0.31080321661106136,
+            "pooled_oof_cindex": 0.3698630136986301
+        },
+        "M2_Image": {
+            "per_fold_cindex": [
+                0.6666666666666666,
+                1.0,
+                0.0,
+                0.5,
+                0.14285714285714285
+            ],
+            "mean_cindex": 0.4619047619047619,
+            "std_cindex": 0.36002015564639617,
+            "pooled_oof_cindex": 0.5273972602739726
+        },
+        "M3_Concat": {
+            "per_fold_cindex": [
+                0.6666666666666666,
+                0.3333333333333333,
+                0.25,
+                1.0,
+                0.5714285714285714
+            ],
+            "mean_cindex": 0.5642857142857143,
+            "std_cindex": 0.2655162258942981,
+            "pooled_oof_cindex": 0.589041095890411
+        },
+        "M4_Attention": {
+            "per_fold_cindex": [
+                0.0,
+                0.6666666666666666,
+                0.125,
+                0.6666666666666666,
+                0.7142857142857143
+            ],
+            "mean_cindex": 0.4345238095238095,
+            "std_cindex": 0.30681045135592183,
+            "pooled_oof_cindex": 0.4452054794520548
+        }
+    }
+}

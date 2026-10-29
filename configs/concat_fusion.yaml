@@ -1,0 +1,11 @@
+training:
+  batch_size: 16
+  learning_rate: 0.0005
+  weight_decay: 1e-4
+  epochs: 100
+  early_stopping_patience: 15
+
+model:
+  image_input_dim: 2048
+  hidden_dim: 128
+  dropout_rate: 0.4

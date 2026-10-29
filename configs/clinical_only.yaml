@@ -1,0 +1,9 @@
+# Hyperparameters for Clinical Baseline (M1)
+seed: 42
+batch_size: 32
+learning_rate: 1.0e-4
+weight_decay: 1.0e-4
+max_epochs: 100
+patience: 15
+d_emb: 128
+dropout: 0.3

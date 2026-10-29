@@ -1,0 +1,12 @@
+training:
+  batch_size: 16
+  learning_rate: 0.0005
+  weight_decay: 1e-4
+  epochs: 100
+  early_stopping_patience: 15
+
+model:
+  image_input_dim: 2048
+  hidden_dim: 128
+  dropout_rate: 0.4 # Recommended 0.4 - 0.5 to control overfitting on small cohorts
+  # Note: N (number of patches) is handled dynamically by the M4 spatial attention block.
